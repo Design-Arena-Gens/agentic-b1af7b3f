@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-parchment text-ink font-body;
+}
+
+a {
+  @apply text-accent font-semibold;
+}
+
+::selection {
+  background: theme('colors.accent');
+  color: theme('colors.parchment');
+}
